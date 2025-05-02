@@ -1,4 +1,4 @@
-import { Card, Typography } from "antd";
+import { Card } from "antd";
 import { StarOutlined } from "@ant-design/icons";
 
 import TaskForm from "../components/TaskForm";
