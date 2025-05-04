@@ -3,6 +3,7 @@ import { StarOutlined } from "@ant-design/icons";
 
 import TaskForm from "../components/TaskForm";
 import TaskList from "../components/TaskList";
+import FlowerTable from "../components/Table";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
 
         <TaskForm />
         <TaskList />
+
+        <FlowerTable />
       </Card>
     </main>
   );
