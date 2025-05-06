@@ -14,7 +14,6 @@ export function getColumnSearchProps<T extends object>(
   searchProps: SearchProps<T>
 ): TableColumnType<T> {
   const { searchText, searchedColumn, setSearchText, setSearchedColumn } =
-    // eslint-disable-next-line react-hooks/rules-of-hooks
     useSearchStore();
 
   const handleSearch = (
@@ -99,10 +98,6 @@ export function getColumnSearchProps<T extends object>(
       },
     },
     render: (text: string) =>
-      searchedColumn === dataIndex ? (
-        <span>{text}</span> // Just return the plain text instead of highlighting it
-      ) : (
-        text
-      ),
+      searchedColumn === dataIndex ? <span>{text}</span> : text,
   };
 }

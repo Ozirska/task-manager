@@ -36,6 +36,9 @@ export default function FlowerTable() {
       title: "Price",
       dataIndex: "price",
       key: "price",
+      sorter: {
+        compare: (a, b) => a.price - b.price,
+      },
     },
     {
       title: "Type",
